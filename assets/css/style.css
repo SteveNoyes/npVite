@@ -98,7 +98,7 @@ section {
 
 blockquote {
   padding: 0;
-  grid-column: 2 / span 9;
+  grid-column: 2 / 12;
   margin-bottom: var(--spacing);
   font-size: 1.25rem;
   text-align: center;
@@ -118,7 +118,7 @@ blockquote {
 }
 
 .right {
-  grid-column: 6 / 12;
+  grid-column: 2 / 12;
 }
 
 .short-margin {
@@ -144,32 +144,12 @@ nav {
   padding-bottom: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* =======================================
               Media Queries
 ======================================== */
 
-
-
-
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   header {
     grid-column: 2 / span 5;
     padding: 2rem;
@@ -181,6 +161,7 @@ nav {
   .left {
     grid-column: 2 / 6;
     padding: 1rem;
+    padding-bottom: 1.2rem;
     background: var(--dark-bg);
     font-size: 1.25rem;
     line-height: 1.5;
@@ -188,6 +169,10 @@ nav {
     border-radius: var(--border-radius);
   }
   
+  .left-align {
+    grid-column: 2 / 7;
+  }
+
   .right {
     grid-column: 6 / 12;
   }
@@ -196,9 +181,3 @@ nav {
     grid-column: 4 / 10;
   }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
