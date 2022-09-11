@@ -2,8 +2,6 @@ import * as THREE from 'three';
 
 // Setup
 
-
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({
@@ -18,7 +16,7 @@ renderer.render(scene, camera);
 
 // Torus
 
-const geometry = new THREE.TorusGeometry(10.431, 2.574, 30, 4, 6.283185);
+const geometry = new THREE.TorusGeometry(10.431, 2.574, 30, 6, 6.283185);
 const material = new THREE.MeshStandardMaterial({ color: 0x5cb85c });
 const torus = new THREE.Mesh(geometry, material);
 scene.add(torus);

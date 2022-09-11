@@ -51,9 +51,11 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
+- [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
 - [Torus Geometry](https://threejs.org/docs/#api/en/geometries/TorusGeometry) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 
-- [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Typical Breakpoints](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp) - This is a great article which helps me figure out what CSS breakpoints are really going to.
 
 ## Author
 
