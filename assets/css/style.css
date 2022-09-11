@@ -127,6 +127,7 @@ blockquote {
 
 footer {
   margin: 0;
+  grid-column: 2 / 12;
   margin-bottom: var(--footer-spacing);
   padding: 0;
   grid-column: 2 / 12;
@@ -162,16 +163,42 @@ nav {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+/* @media only screen and (max-width: 600px) {...} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+/* @media only screen and (min-width: 600px) {...} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+  header {
+    grid-column: 2 / span 5;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+    background-color: var(--dark-bg);
+    border-radius: var(--border-radius);
+    max-width: 50%;
+  }
+  .left {
+    grid-column: 2 / 6;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    border-radius: var(--border-radius);
+  }
+  
+  .right {
+    grid-column: 6 / 12;
+  }
+
+  .center {
+    grid-column: 4 / 10;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+/* @media only screen and (min-width: 992px) {...} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+/* @media only screen and (min-width: 1200px) {...} */
