@@ -1,0 +1,145 @@
+body {
+  overflow-x:hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(29, 53, 87, .6);
+  --bright-bg: rgba(255, 255, 255, .9);
+  --lite-bg: rgba(255, 255, 255, 0.2);
+  --spacing: 400px;
+  --end-spacing: 150px;
+  --footer-spacing: 75px;
+  --border-radius: 8px;
+  font-family: sans-serif, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: var(--spacing) 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: sans-serif, monospace;
+  font-weight: 550;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  grid-column: 2 / span 5;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  background-color: var(--dark-bg);
+  border-radius: var(--border-radius);
+}
+
+section {
+  grid-column: 2 / 12;
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+.projectButton {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: var(--dark-bg);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: white;
+}
+
+.projectButton:hover {
+  background-color: var(--bright-bg);
+  color: var(--dark-bg);
+}
+
+.blockquoteButton {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: var(--bright-bg);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: black;
+}
+
+.blockquoteButton:hover {
+  border: 2px solid var(--bright-bg);
+  background-color: var(--lite-bg);
+  color: var(--bright-bg);
+}
+
+.wrapper {
+  padding: 1rem;
+  background-color: var(--lite-bg);
+  border-radius: var(--border-radius);
+  margin-bottom: 25px;
+}
+
+blockquote {
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 1.5;
+  background-color: var(--dark-bg);
+  border-radius: var(--border-radius);
+}
+
+.left {
+  grid-column: 2 / 10;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border-radius: var(--border-radius);
+}
+
+.right {
+  grid-column: 6 / 12;
+}
+
+.short-margin {
+  margin-bottom: var(--end-spacing);
+}
+
+footer {
+  margin: 0;
+  margin-bottom: var(--footer-spacing);
+  padding: 0;
+  grid-column: 2 / 12;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 25px;
+  padding-bottom: 20px; 
+}
+
+.imageOfProject img {
+  padding-bottom: 50px;
+
+}
