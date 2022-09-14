@@ -1,0 +1,13 @@
+
+  <form action="contact.php" class="contactForm pt-4 pb-5" method="post" name="contact_form" id="formSubmit">
+    <label for="name"></label>
+    <input class="nameInput" name="name" placeholder="yourName" required="" type="text" />
+    <br />
+    <label for="email"></label>
+    <input class="emailInput" name="email" pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="yourEmail@mail.com" required="" type="text" />
+    <br />
+    <label for="message"></label><br />
+    <textarea class="messageInput" placeholder="Message" name="message" required="" rows="4" cols="30"></textarea><br />
+    <button type="submit" form="formSubmit" value="Submit">Submit</button>
+  </form>
+   
