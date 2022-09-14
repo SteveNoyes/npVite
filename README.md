@@ -5,7 +5,7 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Notes](#notes)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -16,10 +16,14 @@
 
 ![](./screenshot.jpg)
 
+![](./screenshot.jpg)
+
+![](./screenshot.jpg)
+
 ### Links
 
-- Source Code URL: [Github](https://github.com/SteveNoyes/faqAccordionCard)
-- Live Site URL: [Github Pages](https://stevenoyes.github.io/faqAccordionCard/)
+- Source Code URL: [Github](https://github.com/SteveNoyes/npVite)
+- Live Site URL: [Portfolio](https://stevenmnoyes.com/)
 
 ## My process
 
@@ -29,31 +33,38 @@
 - Mobile-first workflow
 - [SCSS](https://blog.logrocket.com/the-definitive-guide-to-scss/)
 
-### What I learned
+### Notes
 
-This has to be the thing I am most proud of. I know it's super simple but it got me thinking in different ways. I started thinking of things the computer could  do for me, like updating the date automatically. 
+This is a rebuild of a previous portfolio. I liked parts of it and tried to incorporate the two 
+together. It turned into frankenstien on me but I am kind of happy with the results. 
 
-```html
-<p class="text-center text-light">copyright &copy; <span class="dateUpdate"></span><script>document.write(new Date().getFullYear())</script> stevenNoyes All Lorem Reserved</p>
-```
-```css
-.example {
-  anything: something;
-}
+
+```js
+const geometry = new THREE.TorusGeometry(15.789, 1.485, 10, 3, 6.283185);
+const material = new THREE.MeshStandardMaterial({ color: 0x1D3557 });
+const torus = new THREE.Mesh(geometry, material);
+scene.add(torus);
 ```
 ```js
-document.write(new Date().getFullYear())
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.rotation.y = t * -0.0002;
 ```
-
+```js
+camera.position.setZ(30);
+camera.position.setX(-3);
+```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Please no
 
 ### Useful resources
 
 - [Reset CSS](https://meyerweb.com/eric/tools/css/reset/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 - [Torus Geometry](https://threejs.org/docs/#api/en/geometries/TorusGeometry) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+
+- [Three.js](https://threejs.org/editor/) - Editing the camera path was made so much easier with this visual representation matrix.
 
 - [Typical Breakpoints](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp) - This is a great article which helps me figure out what CSS breakpoints are really going to.
 
