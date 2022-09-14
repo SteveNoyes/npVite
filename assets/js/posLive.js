@@ -29,7 +29,7 @@ var products = {
       // IMAGE
       segment = document.createElement("img");
       segment.className = "pimg";
-      segment.src = "images/" + p.img;
+      segment.src = "../img/" + p.img;
       pdt.appendChild(segment);
 
       // NAME
