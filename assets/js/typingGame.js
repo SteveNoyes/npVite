@@ -1,9 +1,11 @@
 import * as THREE from 'three';
-// re-align 
 // Setup
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+// initial camera perspective 
+// 75, window.innerWidth / window.innerHeight, 0.1, 1000
+const camera = new THREE.PerspectiveCamera(120, window.innerWidth / window.innerHeight, .1, 2000);
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
@@ -47,7 +49,7 @@ scene.background = bgTexture;
 
 // Avatar
 
-const heroTexture = new THREE.TextureLoader().load('/assets/img/sqImg0.jpg');
+const heroTexture = new THREE.TextureLoader().load('/assets/img/typingGameSq0.jpg');
 const hero = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: heroTexture }));
 scene.add(hero);
 hero.position.z = -5;
@@ -59,9 +61,9 @@ function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
   hero.rotation.y += 0.01;
   hero.rotation.z += 0.01;
-  camera.position.z = t * -0.01;
-  camera.position.x = t * -0.0002;
-  camera.rotation.y = t * -0.0002;
+  camera.position.z = t * 0.01;
+  camera.position.x = t * 0.0002;
+  camera.rotation.y = t * 0.0002;
 }
 
 document.body.onscroll = moveCamera;

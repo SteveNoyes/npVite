@@ -183,13 +183,6 @@ nav {
   }
 }
 
-
-
-
-
-
-
-
 /* ====================================================
                       Contact Form
 ===================================================== */
@@ -206,6 +199,26 @@ nav {
 
 .body-of-contact form {
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-top: 7rem;
+
 }
+
+.footer-sticky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+
+/* documentation note text color */
+.doc-notes {
+  color: #33FF00;
+}
+
+/* typing game live button top margin */
+.typingGameBtn {
+  margin-top: 1rem;
+}
+
