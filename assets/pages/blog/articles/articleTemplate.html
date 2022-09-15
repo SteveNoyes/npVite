@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" id="bootstrapFile">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" id="fontAwesomeFile">
+  <link rel="stylesheet" href="/assets/css/style.css" id="styleCSSFile">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous" async></script>
+  <script src="/assets/js/script.js" charset="utf-8" async></script>
+  <title>stevenNoyes</title>
+</head>
+<body>
+  <div class="top-nav"><!-- top nav -->
+    <a href="/index.html" class="headerLogo liteColor">stevenNoyes</a>
+    <div id="top-nav-links">
+      <a href="/index.html" class="liteColor">home</a>
+      <a href="/index.html#myWork" class="liteColor">work</a>
+      <a href="/assets/pages/contact.html" class="liteColor">contact</a>
+      <a href="/assets/pages/blog/blog.html" class="liteColor">blog</a>
+    </div>
+    <a href="javascript:void(0);" class="icon liteColor" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="container p-5 text-center">
+    <article class="blog-post">
+      <h2 class="mb-1">fromTheLorem</h2>
+      <img src="/assets/img/noyesOnCanvas.png" alt="ai art generated from the number 42">
+      <div class="container" style="width: 70%">
+        <p class="blog-post-meta pb-5">January sometime, 2021 by me</p>
+        <h2 class="blog-post-title pb-5 mb-1">fromTheLorem</h2>
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+        <hr>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h2>Blockquotes</h2>
+        <p>This is an example blockquote in action:</p>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+      </div>
+    </article>
+  </div>
+  <div class="bg-darkPrimeColor">
+    <footer class="py-3 pt-5">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-light">home</a></li>
+        <li class="nav-item"><a href="/index.html#myWork" class="nav-link px-2 text-light">work</a></li>
+        <li class="nav-item"><a href="/assets/pages/contact.html" class="nav-link px-2 text-light">contact</a></li>
+        <li class="nav-item"><a href="/assets/pages/blog/blog.html" class="nav-link px-2 text-light">blog</a></li>
+      </ul>
+      <p class="text-center text-light">copyright &copy; <span class="dateUpdate"></span><script>document.write(new Date().getFullYear())</script> stevenNoyes All Lorem Reserved</p>
+    </footer><!-- end of footer  -->
+  </div><!-- end of footer wrap -->
+</body>
+</html>
