@@ -47,7 +47,7 @@ scene.background = bgTexture;
 
 // Avatar
 
-const heroTexture = new THREE.TextureLoader().load('/assets/img/stoneCitySQ.jpg');
+const heroTexture = new THREE.TextureLoader().load('/assets/img/adArtSQ.jpg');
 const hero = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: heroTexture }));
 scene.add(hero);
 hero.position.z = -5;
