@@ -47,7 +47,7 @@ scene.background = bgTexture;
 
 // Avatar
 
-const heroTexture = new THREE.TextureLoader().load('/assets/img/sqImg0.jpg');
+const heroTexture = new THREE.TextureLoader().load('/assets/img/boomerNaturalsSQ.jpg');
 const hero = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: heroTexture }));
 scene.add(hero);
 hero.position.z = -5;
