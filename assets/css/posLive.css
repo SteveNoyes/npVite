@@ -11,6 +11,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h1 {
+  color: #0f1b2c;
+  text-align: center;
+  word-spacing: 10px;
+}
+
 nav ul{
   list-style: none;
 }
@@ -22,7 +28,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
-  padding: 1em;
+  margin: 20px;
 }
 
 #poslist { width: 70%; }
@@ -83,3 +89,13 @@ nav ul li a {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  nav ul li {
+    display: inline-flexbox;
+    flex-direction: column;
+  }
+
+  h1 {
+    word-spacing: 0px;
+  }
+}
