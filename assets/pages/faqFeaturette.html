@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="/assets/img/favicon_io/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS from old site -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" id="bootstrapFile">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" id="fontAwesomeFile">
+  <!-- CSS Reset and custom stylesheet -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- JQuery and Bootstrap JS from old site -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
+  <script src="/assets/js/script.js" charset="utf-8" async></script>
+  <title>stevenNoyes</title>
+  <style media="screen">
+    .accordions {
+      width: 80%;
+      margin: 100px auto;
+    }
+
+    .accordions h3 {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+    }
+
+    .accordion-item {
+      background-color: #0f1b2c;
+      margin-bottom: 20px;
+      border: 1px solid #100e34;
+      border-radius: 5px;
+      color: #ffffff;
+    }
+
+    .accordion-item .accordion-title {
+      cursor: pointer;
+      padding: 20px;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .accordion-item .accordion-title.active-title {
+      background-color: #100e34;
+      color: #ffffff;
+    }
+
+    .accordion-item .accordion-title h3 {
+      font-weight: 700;
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .accordion-item .accordion-title i.fa-chevron-down {
+      transform: rotate(0);
+      transition: 0.4s;
+    }
+
+    .accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+      transform: rotate(-180deg);
+      color: #a2a2a2;
+    }
+
+    .accordion-item .accordion-content {
+      display: none;
+      line-height: 1.7;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 0 0 5px 5px;
+      color: #100e34;
+    }
+
+    .accordion-item .accordion-content.active {
+      display: block;
+    }
+
+    .accordion-item .accordion-content p {
+      margin: 0;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 16px;
+    }
+
+    .details {
+      background: #dce1f2;
+    }
+
+    .details .detailed_info {
+      margin: 50px auto;
+    }
+
+    .details img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .details h3 {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .details p {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+
+    .details ul li {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.7em;
+    }
+
+    @media screen and (min-width: 1000px) {
+      .accordions {
+        width: 50%;
+    }
+    }
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <section id="faq">
+    <div class="container faq">
+      <div class="container">
+        <div class="row"> 
+          <ul class="nav justify-content-center border-bottom">
+            <li class="nav-item"><a href="stoneCityDigital.html#FAQfeaturetteDocs" class="nav-link text-dark">back</a></li>
+            <li class="nav-item"><a href="../../index.html" class="nav-link text-dark">home</a></li>
+            <li class="nav-item"><a href="../../index.html#projects" class="nav-link text-dark">work</a></li>
+            <li class="nav-item"><a href="blog/blog.html" class="nav-link text-dark">blog</a></li>
+          </ul>
+          <div class="col-sm-12">
+            <div class="accordions">
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item1">
+                  <h3>What is Paper online tutoring?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item1">
+                  <p>Paper partners with school districts to deliver 1:1 tutoring that is equitable, scalable, and cost-effective. Students get unlimited 24/7 live help and writing feedback, teachers get insights to tackle individual learning gaps, and administrators get actionable data to inform strategic decisions. Paper’s multilingual tutors add an extra layer of support across all content areas and grade levels, in and out of the classroom— so students always have access to expert help exactly when, where, and how they need it.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item2">
+                  <h3>Who are Paper’s tutors?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item2">
+                  <p>Paper carefully selects every member of our diverse and multilingual team of tutors to
+                    ensure students get the very best help. We hire high-performing college students, PhD candidates, and teachers with expertise across K-12 subject areas.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item3">
+                  <h3>Are Paper tutors free?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item3">
+                  <p>Paper believes every student should have access to the support they need—anytime, anywhere. We also believe that the burden of providing this support shouldn’t be on teachers or parents. Paper partners with school systems to deliver 24/7, unlimited, and multilingual tutoring—at no cost to families.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item4">
+                  <h3>How do I check if I have access to Paper?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item4">
+                  <p>Check out our access lookup tool to see if you have access to Paper through your school district or state.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item5">
+                  <h3>Is Paper tutoring legit?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item5">
+                  <p>Yes! Paper is currently partnered with hundreds of school systems across North America, serving nearly 2.5 million students on our 24/7 academic support platform. Learn more about Paper's impact here.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item6">
+                  <h3>How does Paper tutoring work?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item6">
+                  <p>Paper offers free, 24/7 chat-based tutoring for students in English, Spanish, French, and Mandarin. Tutors are available on-demand for unlimited, 1:1 support in any K-12 subject area. Based on a student’s question, grade level, and language preference, Paper pairs students with the best tutor to meet their needs within 30 seconds. Transcripts of each tutoring session are saved for students whenever they need to revise concepts.</p>
+                  <p>Along with live help, Paper also offers an asynchronous essay review tool that allows students to receive annotated feedback on content, grammar, and structure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $(".accordion-title").click(function (e) {
+      var accordionitem = $(this).attr("data-tab");
+      $("#" + accordionitem)
+        .slideToggle()
+        .parent()
+        .siblings()
+        .find(".accordion-content")
+        .slideUp();
+
+      $(this).toggleClass("active-title");
+      $("#" + accordionitem)
+        .parent()
+        .siblings()
+        .find(".accordion-title")
+        .removeClass("active-title");
+
+      $("i.fa-chevron-down", this).toggleClass("chevron-top");
+      $("#" + accordionitem)
+        .parent()
+        .siblings()
+        .find(".accordion-title i.fa-chevron-down")
+        .removeClass("chevron-top");
+    });
+  });
+  </script>
+</body>
+</html>
