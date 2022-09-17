@@ -15,15 +15,15 @@
     <title>stevenNoyes</title>
   </head>
   <body class="body-of-contact">
-    <form action="contact.php" class="contactForm pt-4 pb-5" method="post" name="contact_form" id="formSubmit">
+    <form action="../php/contact.php" class="contactForm pt-4 pb-5" method="post" name="contact_form" id="formSubmit">
       <label for="name"></label>
-      <input class="nameInput" name="name" placeholder="yourName" required="" type="text" />
+      <input class="mb-2 nameInput formInput" name="name" placeholder="yourName" required="" type="text" autofocus/>
       <br />
       <label for="email"></label>
-      <input class="emailInput" name="email" pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="yourEmail@mail.com" required="" type="text" />
+      <input class="emailInput formInput" name="email" pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="yourEmail@mail.com" required="" type="text" />
       <br />
       <label for="message"></label><br />
-      <textarea class="messageInput" placeholder="Message" name="message" required="" rows="4" cols="30"></textarea><br />
+      <textarea class="mb-3 messageInput formInput" placeholder="Message" name="message" required="" rows="4" cols="30"></textarea><br />
       <button type="submit" class="blockquoteButton" form="formSubmit" value="Submit">Submit</button>
     </form>
     <footer class="pt-5 footer-sticky">

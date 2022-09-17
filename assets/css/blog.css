@@ -1,12 +1,7 @@
-.blogLinks:hover {
-  color: var(--yellowColor);
+a {
+  color: #0f1b2c;
 }
 
-.articleHover:hover {
-  color: var(--yellowColor);
-}
-
-/* custom style from head */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -58,14 +53,12 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* stylelint-disable selector-list-comma-newline-after */
-
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Times New Roman", serif;
   font-size: 2.25rem;
 }
 
@@ -74,15 +67,16 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Times New Roman", serif;
 }
 
 .display-4 {
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
+
 @media (min-width: 768px) {
   .display-4 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -95,20 +89,19 @@ h1, h2, h3, h4, h5, h6 {
   .h-md-250 { height: 250px; }
 }
 
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
 
-/*
- * Blog posts
- */
 .blog-post {
   margin-bottom: 4rem;
 }
+
+.blog-post p {
+  padding-bottom: 1rem;
+}
+
 .blog-post-title {
   font-size: 2.5rem;
 }
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #727272;

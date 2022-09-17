@@ -2,6 +2,10 @@ body {
   overflow-x:hidden;
 }
 
+.center-img {
+  margin: auto;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -56,14 +60,14 @@ header {
 section {
   grid-column: 2 / 12;
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
 
 .projectButton {
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   background-color: var(--dark-bg);
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -77,7 +81,7 @@ section {
 
 .blockquoteButton {
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   background-color: var(--bright-bg);
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -101,7 +105,7 @@ blockquote {
   padding: 0;
   grid-column: 2 / 12;
   margin-bottom: var(--spacing);
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 1.5;
   background-color: var(--dark-bg);
@@ -112,7 +116,7 @@ blockquote {
   grid-column: 2 / 10;
   padding: 1rem;
   background: var(--dark-bg);
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
   border-radius: var(--border-radius);
@@ -164,7 +168,7 @@ nav {
     padding: 1rem;
     padding-bottom: 1.2rem;
     background: var(--dark-bg);
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
     border-radius: var(--border-radius);
@@ -200,7 +204,6 @@ nav {
 .body-of-contact form {
   text-align: center;
   margin-top: 7rem;
-
 }
 
 .footer-sticky {
@@ -211,7 +214,21 @@ nav {
 }
 
 /* typing game live button top margin */
+
+.formInput {
+  background-color: var(--lite-bg);
+  border-radius: 8px;
+  color: white;
+}
+
 .typingGameBtn {
   margin-top: 1rem;
 }
 
+
+/* Thank You Card */
+
+.card-header {
+  background-color: var(--dark-bg);
+  color: white;
+}

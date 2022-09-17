@@ -30,20 +30,23 @@ body {
 
 .shooter {
   background-color: #31437b;
-
+  box-shadow: 2px 3px 10px #31437b;
 }
 
 .invader {
   background-color: #70a753;
   border-radius: 10px;
+  box-shadow: 2px 3px 10px #70a753;
 }
 
 .boom {
   background-color: #a93e19;
+  box-shadow: 2px 3px 10px #a93e19;
 }
 
 .laser {
   background-color: #f9dc42;
+  box-shadow: 2px 3px 10px #f9dc42;
 }
 
 /* ==============================================

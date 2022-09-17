@@ -43,7 +43,7 @@
 
   //redirect to thank you page
 
-  header('Location: thankYou.html');
+  header('Location: ../pages/thankYou.html');
 
   }
 
