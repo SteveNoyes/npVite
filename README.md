@@ -14,15 +14,11 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/img/tipsyRobot.jpg)
 
-![](./screenshot.jpg)
-
-![](./screenshot.jpg)
 
 ### Links
 
-- Source Code URL: [Github](https://github.com/SteveNoyes/npVite)
 - Live Site URL: [Portfolio](https://stevenmnoyes.com/)
 
 ## My process
